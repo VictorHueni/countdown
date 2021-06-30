@@ -109,6 +109,7 @@ ul {
 }
 
 li {
+  display:inline-block;
   font-size: 30px;
   list-style-type: none;
   padding: 10px;
@@ -125,6 +126,29 @@ li span {
 .complete {
   position: relative;
   top: 60px;
+}
+
+.complete-title {
+  animation: complete 4s infinite;
+}
+
+@keyframes complete {
+  0% {
+    color: rgb(165, 11, 11);
+  } 
+  25% {
+    color: rgb(245, 211, 21);
+  }
+  50%{
+    color: rgb(37, 165, 11);
+  }
+  75%{
+    color: rgb(11, 73, 165);
+    transform: scale(1.5);
+  }
+  100% {
+    color: rgb(165, 11, 139);
+  }
 }
 
 /* Media Query: Large Smartphone (Vertical) */
