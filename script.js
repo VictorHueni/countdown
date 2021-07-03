@@ -14,10 +14,11 @@ const completeBtn = document.getElementById('complete-button');
 // Global Variable
 let countdownTitle = '';
 let countdownDate = '';
-let countdownValue = Date;
+let countdownValue = new Date();
 let countdownActive;
-let savedCountdown;
+let savedCountdown = {};
 
+// Global Constante
 const second = 1000;
 const minute = second * 60;
 const hour = minute * 60;
